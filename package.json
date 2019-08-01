@@ -1,0 +1,14 @@
+{
+  "name": "mymath",
+  "version": "1.0.0",
+  "description": "Mathematical Manipulations",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
