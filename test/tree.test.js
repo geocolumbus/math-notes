@@ -30,13 +30,15 @@ describe("Tree tests", function () {
     })
 
     it("should print out the tree", function () {
-        const tree = new Tree.tree()
-        tree.addRightChild(tree.root)
-        tree.addRightChild(tree.root)
+        const tree = new Tree.tree("A")
+        tree.addLeftChild(tree.root, "B")
+        tree.addRightChild(tree.root, "C")
+        tree.addLeftChild(tree.root.leftChild, "D")
+        tree.addRightChild(tree.root.leftChild, "E")
 
-        console.log(tree.toString())
+        const expected = "   A\n /   \\\n B   C\n/ \\\nD E"
 
-        expect(tree.toString()).toEqual("")
+        expect(tree.listTree()).toEqual(expected)
     })
 
 })
