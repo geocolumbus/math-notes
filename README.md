@@ -1,0 +1,4 @@
+# Some math ideas
+
+## Usage
+
